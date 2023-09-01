@@ -1,0 +1,13 @@
+/** favourite book list:
+Lord of the rings (3)
+stormbreaker (4) 
+Lord of the flies (5)
+**/
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER) ;
+
+INSERT INTO books VALUES (1, "lord of the rings", 3);
+
+INSERT INTO books VALUES (2, "stormbreaker", 4);
+INSERT INTO books VALUES (3, "lord of the flies", 5) ;
+SELECT * FROM books;
