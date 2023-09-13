@@ -1,0 +1,21 @@
+Write your own SQL query that uses a SELECT statement to order the items by price:
+SELECT SUM(price),item_name
+FROM superstore 
+GROUP BY item_name 
+ORDER BY price desc
+
+Write SQL query that shows the average price for the different categories:
+SELECT AVG(price),category
+FROM superstore
+GROUP BY category
+ORDER BY price desc
+
+Write SQL query that will show the average price of items belonging to the category of "Kitchen Supplies":
+SELECT AVG(price),category
+FROM superstore
+WHERE category ="Kitchen Supplies"
+
+Write SQL query that will show how many air purifiers are in stock:
+SELECT stock_quantity
+FROM superstore 
+WHERE item_name = "Air Purifier"
